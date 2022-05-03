@@ -3,7 +3,7 @@
 
 <!---->
 <head>
-  <title>Danny - en tränare för alla</title>
+  <title>DSK - en klubb för alla</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,24 +28,57 @@
       </div>
   </div>
 
-  <div class="container3">
+  <div class="container4">
 
-    <div class="dannybild">
-      <img src="img/danny.jpg" alt="Bild på Danny Barouta" title="Danny Barouta">
+    <div class="bildspelscontainer">
+      <!-- Fullbredds-bilder with med nummer och "prickar"-->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/dsk1.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/dsk2.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/dsk3.jpeg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <br>
 
-    <div class="dannytext">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat diam, a lobortis purus molestie eu. Maecenas ac posuere mi, et mollis ligula. Praesent hendrerit, nisi a porttitor rhoncus, turpis odio lacinia enim, non efficitur odio libero id neque. Praesent quis est sem. Ut a semper urna, eget egestas sem. Quisque elementum eros sit amet neque tempus lacinia. Donec ac tortor metus. Maecenas accumsan leo vulputate, efficitur mi tempus, dapibus felis. Nam euismod dui ut magna lacinia, sed maximus nulla laoreet. Suspendisse sagittis varius nisl suscipit rutrum. Phasellus sagittis leo mauris, vel varius purus convallis sit amet. Aenean ut felis arcu.</p>
-      <p>Danny är idag huvudtränare för följande lag:</p>
-      <ul>
-         <li>P05</li>
-         <li>P08</li>
-         <li>F08/09</li>
-      </ul>
+  <!-- Här under kommer koden för de olika "utfällbara" sidorna med text -->
+  <div class="hyllor">
+
+    <button class="accordion">Målvakter</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Backar</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Mittfältare</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Forwards</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
     </div>
 
   </div>
-
 
   <div class="footer">
 <!--I footern så kan man komma i kontakt med mig, samt navigera sig mellan de olika sidorna.-->
@@ -81,7 +114,7 @@
     </div>
 
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
