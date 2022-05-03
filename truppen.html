@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<!---->
+<head>
+  <title>DSK - en klubb för alla</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+<!--Raden under denna så är bilden som ändrar "the icon". Alltså det emblemet som sitter uppe på fliken.-->
+  <link rel="icon" href="img/dsk-logo.png"/>
+</head>
+
+<body>
+
+  <div class="header">
+      <!--Här är menyn, där har jag länkar till mina olika interna sidor-->
+      <a class="huvudlogo" href="index.html"><img src="img/dsk-logo.png" title="Till huvudsidan" alt="Danderyds SK:s logotyp"></a>
+      <a class="vallen" href="danderydsvallen.html" title="Danderydsvallen">Danderydsvallen</a>
+      <div class="dropdown">
+        <button class="dropbtn">DSK P05</button>
+          <div class="dropdown-content">
+            <a href="truppen.html" title="P05-truppen">Truppen</a>
+            <a href="danny.html" title="Vem är Danny Barouta?">Danny B</a>
+            <a href="https://www.stff.se/rs/tabell-och-resultat/p2005--1a/97761/" target="_blank" title="Till StFF:s hemsida">Tabell</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="container4">
+
+    <div class="bildspelscontainer">
+      <!-- Fullbredds-bilder with med nummer och "prickar"-->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/dsk1.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/dsk2.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/dsk3.jpeg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+  <!-- Här under kommer koden för de olika "utfällbara" sidorna med text -->
+  <div class="hyllor">
+
+    <button class="accordion">Målvakter</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Backar</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Mittfältare</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    <button class="accordion">Forwards</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+<!--I footern så kan man komma i kontakt med mig, samt navigera sig mellan de olika sidorna.-->
+    <div class="kontaktrubrik">
+      <h3>KONTAKT</h3>
+    </div>
+
+    <div class="kontakt">
+<!--En kontanlista för att komma i kontakt med mig.-->
+      <p><a href="https://www.svenskalag.se/dsk-fotboll-p05/profil/1447858/david-odelros?seasontypeid=3&year=" target="_blank">David Odelros</a></p>
+      <p><a href="https://www.tabyenskilda.se/adress/" target="_blank">Täby Enskilda Gymnasium</a></p>
+      <p><a href="https://goo.gl/maps/LXjRsJxybQ5bmUAY9" target="_blank">Kemistvägen 1a</a></p>
+      <p><a href="https://goo.gl/maps/V15SzNq2yNemWTNXA" target="_blank">18379 Täby</a></p>
+      <p><a href="https://goo.gl/maps/mA2ExHu9uC4MQrpR8" target="_blank">Sweden</a></p>
+    </div>
+
+    <div class="hem">
+<!--Här kan man ta sig till "homepage", vilket är denna sida, men från de andra sidorna kan man också komma hit.-->
+      <h3><a href="index.html">FÖRSTASIDAN</a></h3>
+    </div>
+
+    <div class="dvallen">
+    <!--Här kan man ta sig till "homepage", vilket är denna sida, men från de andra sidorna kan man också komma hit.-->
+      <h3><a href="danderydsvallen.html">DANDERYDSVALLEN</a></h3>
+    </div>
+
+    <div class="p05footer">
+<!--Här kan man klicka in sig till förarsidan.-->
+      <h3>P05</h3>
+      <h4><a href="truppen.html">Truppen</a></h4>
+      <h4><a href="danny.html">Danny B</a></h4>
+      <h4><a href="https://www.stff.se/rs/tabell-och-resultat/p2005--1a/97761/" target="_blank">Tabell</a></h4>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
