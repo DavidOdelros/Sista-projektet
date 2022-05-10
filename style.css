@@ -261,6 +261,7 @@ body {
 .bildspelscontainer {
   position: relative;
   margin: auto;
+  top: 0;
 }
 
 /* Hide the images by default */
