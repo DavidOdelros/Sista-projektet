@@ -1,6 +1,12 @@
+/**/
+
 body {
+/*Hela bodyn har bakgrundsbilden mörtblå*/
   background-color: rgb(16, 72, 187);
 }
+
+
+/***********************************************HEADER (alla sidor)**************************************************/
 .header {
 /*Styling för headern.*/
   background-color: rgb(52, 120, 188);
@@ -13,12 +19,13 @@ body {
 }
 
 .vallen:hover {
+/*När man hovrar på texten i headern så kommer en liten border-bottom upp*/
   border-bottom: 2.5px solid rgb(16, 72, 187);
   opacity: 80%;
 }
 
-/*Dropdown här nedan*/
 .dropbtn {
+/*Dropdown här nedan*/
   color: white;
   margin: 15px;
   text-align: center;
@@ -50,7 +57,7 @@ body {
   display: block;
 }
 
-/*Ändra färg på dropdiwn-knapparna vid hover*/
+/*Ändra färg på dropdown-knapparna vid hover*/
 .dropdown-content a:hover {background-color: rgb(16, 72, 187);}
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -59,36 +66,155 @@ body {
 
 
 .huvudlogo {
+/*Den logotypen till vänster på headern*/
   margin-top: 5px;
   margin-right: 10px;
 }
-/*Ändra transparensen på loggan så att mn ser att man hovrar över den*/
+
 .huvudlogo:hover {
+/*Ändra transparensen på loggan så att mn ser att man hovrar över den*/
   opacity: 80%;
 }
 
 .header a:not(.huvudlogo) {
-  /*Styling för texten på länkarna och olika "margin" och "padding" för att få det att se bra ut.*/
-    color: white;
-    margin: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 30px;
-    border-radius: 10px;
-  }
-
-.container {
-  /*Första bakgrundsbilden.*/
-    margin-top: 60px;
-    padding: 0;
-    width: 100%;
-    left: 0;
-  }
-.textstycke {
-  background-color: white;
+/*Styling för texten på länkarna och olika "margin" och "padding" för att få det att se bra ut*/
+  color: white;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 30px;
+  border-radius: 10px;
 }
 
+
+/***********************************************FOOTER (alla sidor)**************************************************/
+.footer {
+/*Styling för footern i stort*/
+  background-color: rgb(52, 120, 188);
+  border-top: 4px dashed rgb(16, 72, 187);
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.kontakt {
+/*Styling för "Kontakt"-stycket*/
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+  .kontaktrubrik h3 {
+/*Speficik styling för "h3"*/
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  .kontakt a {
+/*Specifik styling för "a"*/
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .kontakt a:hover{
+/*När man hovrar "a" så får man en border-bottom*/
+    border-bottom: 2.5px solid rgb(16, 72, 187);
+  }
+
+.hem {
+/*Styling för "hem"-stycket*/
+  text-align: center;
+  margin-top: 5px;
+}
+
+  .hem a {
+/*Specifik styling för "a"*/
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .hem a:hover{
+/*När man hovrar "a" så får man en border-bottom*/
+    border-bottom: 2.5px solid rgb(16, 72, 187);
+  }
+
+.p05footer {
+/*Styling för "p05"-stycket*/
+  text-align: center;
+  margin-top: 5px;
+}
+
+  .p05footer a {
+/*Specifik styling för "a"*/
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .p05footer a:hover{
+/*När man hovrar "a" så får man en border-bottom*/
+    border-bottom: 2.5px solid rgb(16, 72, 187);
+  }
+
+  .p05footer h3 {
+/*Specifik styling för "h3"*/
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+.dvallen {
+/*Styling för "danderydsvallen"-stycket*/
+  text-align: center;
+  margin-top: 5px;
+}
+  .dvallen a {
+/*Specifik styling för "a"*/
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .dvallen a:hover{
+/*När man hovrar "a" så får man en border-bottom*/
+    border-bottom: 2.5px solid rgb(16, 72, 187);
+  }
+
+
+/***********************************************CONTAINER (index.html)**************************************************/
+.container {
+/*Första bakgrundsbilden.*/
+  margin-top: 60px;
+  padding: 0;
+  width: 100%;
+  left: 0;
+}
+
+.bakgrund {
+/*Styling för bakgrundsbilden*/
+/*Den ska ha en fast position på sidan*/
+  position: absolute;
+/*Full bredd*/
+  width: 100%;
+/*Specifik höjd*/
+  height: 600px;
+/*Ingen marginal till vänster*/
+  left: 0;
+/*Lägg bilden "bakom" allt annat*/
+  z-index: -1;
+}
+
+/*Ändra text-grejer på texten i första containern*/
 .container > h1 {
   text-align: center;
   font-size: 45px;
@@ -99,19 +225,29 @@ body {
 .container > p {
   background-color: #bfe0ff;
 }
+
 .logo {
+/*Placering av logotypen i mitten av sidan och en liten bit uppåt*/
   margin-left: auto;
   margin-right: auto;
   margin-top: -25px;
 }
-/*Bilden syns inte i vanliga fall*/
+
 .intiativ {
-    display: none;
+/*Bilden syns inte i vanliga fall -->*/
+  display: none;
 }
 /*Men under dessa kriterier så syns den (datorskärmstorlek)*/
 @media (min-width: 650px){
    .intiativ {display: block; width: 99.5%; margin-top: 18px;}
 }
+
+/*Styling av texten*/
+.stycke1{margin: 8px 0px 0px 0px; padding: 8px;}
+.stycke2{margin: 0; padding: 8px;}
+.stycke3{margin: 0; padding: 8px;}
+.stycke4{margin: 0px 0px 5px 0px; padding: 8px;}
+
 /*När bilden försvinner så centreras texten och lite ändringar i padding och margin för att få det att se bra ut. */
 @media (max-width: 650px){
    .stycke1{text-align: center;}
@@ -120,114 +256,34 @@ body {
    .stycke4{text-align: center;}
 }
 
-.stycke1{margin: 8px 0px 0px 0px; padding: 8px;}
-.stycke2{margin: 0; padding: 8px;}
-.stycke3{margin: 0; padding: 8px;}
-.stycke4{margin: 0px 0px 5px 0px; padding: 8px;}
 
-.bakgrund {
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  left: 0;
-  z-index: -1;
+/***********************************************CONTAINER2 (danderydsvallen.html)**************************************************/
+.container2 h1 {
+/*Styling för h1*/
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #bfe0ff;
+  text-decoration: underline;
 }
-
-.footer {
-/*Styling för footern.*/
-  background-color: rgb(52, 120, 188);
-  border-top: 4px dashed rgb(16, 72, 187);
-  left: 0;
-  width: 100%;
-  position: absolute;
-}
-
-  /*↓↓Styling för "Kontakt"-stycket.↓↓*/
-  .kontakt {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-    .kontaktrubrik h3 {
-      font-size: 21px;
-      font-weight: bold;
-      text-align: center;
-      color: white;
-    }
-    .kontakt a {
-      color: white;
-      text-align: center;
-      text-decoration: none;
-    }
-    .kontakt a:hover{
-      border-bottom: 2.5px solid rgb(16, 72, 187);
-    }
-
-  .hem {
-  /*↓↓Styling för "hem"-stycket.↓↓*/
-    text-align: center;
-    margin-top: 5px;
-  }
-    .hem a {
-      color: white;
-      text-decoration: none;
-      font-size: 21px;
-      font-weight: bold;
-    }
-    .hem a:hover{
-      border-bottom: 2.5px solid rgb(16, 72, 187);
-    }
-
-  .p05footer {
-  /*↓↓Styling för "p05"-stycket.↓↓*/
-    text-align: center;
-    margin-top: 5px;
-  }
-    .p05footer a {
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-weight: normal;
-      }
-    .p05footer a:hover{
-      border-bottom: 2.5px solid rgb(16, 72, 187);
-    }
-    .p05footer h3 {
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 21px;
-      }
-
-    .dvallen {
-    /*↓↓Styling för "danderydsvallen"-stycket.↓↓*/
-      text-align: center;
-      margin-top: 5px;
-    }
-      .dvallen a {
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 21px;
-        }
-      .dvallen a:hover{
-        border-bottom: 2.5px solid rgb(16, 72, 187);
-      }
 
 .container2 img{
+/*Bilden ska vara full bredd i griden och ingen marginal*/
   width: 100%;
   padding: 0;
   margin: 0;
 }
+
 .container2 p {
+/*Styling för p*/
   text-align: left;
   margin: 0;
   padding: 10px;
   background-color: #bfe0ff;
 }
+
 .container2 h2 {
+/*Styling för underrubrikerna vid varje text tillhörande en bild*/
   font-size: 20px;
   text-align: center;
   padding-bottom: 10px;
@@ -237,42 +293,69 @@ body {
   background-color: #bfe0ff;
 }
 
+
+/***********************************************CONTAINER3 (danny.html)**************************************************/
 .dannybild img {
+/*Bilden ska vara så stor som möjligt i sin grid, men inte större än 420px eller mindre än 200px*/
   max-width: 420px;
   min-width: 200px;
   width: 100%;
 }
 
 .container3 p {
+/*Styling för p*/
   text-align: left;
   margin: 0;
   padding: 10px;
   background-color: #bfe0ff;
 }
+
 .container3 ul {
+/*Styling för listan*/
   background-color: #bfe0ff;
   padding-bottom: 10px;
   margin: 0;
 }
 
+.container3 h1 {
+/*Styling för h1*/
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #bfe0ff;
+  text-decoration: underline;
+}
+
+
+/***********************************************CONTAINER4 (truppen.html)**************************************************/
 * {box-sizing:border-box}
 
-/* Slideshow container */
+.container4 h1 {
+/*Styling för h1*/
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #bfe0ff;
+  text-decoration: underline;
+}
+
 .bildspelscontainer {
+/*Containern för bilspelet*/
   position: relative;
   margin: auto;
   top: 0;
 }
 
-/* Hide the images by default */
 .mySlides {
+/*Bilderna göms som standard*/
   display: none;
 }
 
-/* Next & previous buttons */
+/*Knapparna för nästa och föregående bild*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
+/*De ska vara på 50% höjd från toppen av bilden, och därmed i mitten*/
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -285,18 +368,18 @@ body {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
+/*"Nästa"-knappen placeras till höger*/
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+/*När man hovrar över knapparna får man en svart bakgrund med 50% opacity*/
   background-color: rgba(0,0,0,0.5);
 }
 
-/* Number text */
+/*Nummer-text*/
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -305,10 +388,10 @@ body {
   top: 0;
 }
 
-/* Fading animation */
+/*Animation för fade:n*/
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -317,8 +400,9 @@ body {
 }
 
 
-/* Här under kommer "hyllorna" */
+/*Här under kommer "hyllorna"*/
 .accordion {
+/*Styling för hyllorna*/
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -328,14 +412,16 @@ body {
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .active, .accordion:hover {
+/*Grå bakgrund för den aktiva panelen och den som man hovrar*/
   background-color: #ccc;
 }
 
 .panel {
+/*Styling för panelerna*/
   padding: 0 18px;
   display: none;
   background-color: white;

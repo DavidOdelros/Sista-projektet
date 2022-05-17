@@ -1,6 +1,6 @@
 
 
-/* Här under kommer "hyllorna" */
+//Här under kommer "hyllorna"
 var acc = document.getElementsByClassName("accordion");
 var i;
 
